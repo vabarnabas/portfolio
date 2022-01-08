@@ -5,25 +5,25 @@ const Navbar = () => {
 
     const menuItems = [
         {
-            title: 'About',
+            title: 'about',
             path: '',
         },
         {
-            title: 'Projects',
+            title: 'projects',
             path: '',
         },
         {
-            title: 'Contact',
+            title: 'contact',
             path: '',
         },
     ]
 
     return (
-        <div className='fixed top-0 left-0 right-0 px-6 h-12 w-full flex items-center justify-center text-white select-none'>
+        <div className='z-10 fixed top-0 left-0 right-0 px-6 h-12 w-full flex items-center justify-center text-white select-none bg-gray-700'>
             <p className="mr-auto cursor-pointer font-bold flex items-center justify-center"><span className='text-teal-500'>{'<'}</span>barnabee<span className='text-teal-500'>{'/>'}</span></p>
             <div className="hidden md:flex ml-auto items-center justify-center space-x-8">
                 {menuItems.map((item) => (
-                    <div key={item.title} className="cursor-pointer font-semibold">
+                    <div key={item.title} className="cursor-pointer font-bold">
                         <p className=" hover:text-teal-500 text-sm">{item.title}</p>
                     </div>
                 ))}

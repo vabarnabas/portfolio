@@ -1,13 +1,16 @@
-import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 
-
 function App() {
+
+  document.title = 'Barnabas Varga - Porfolio'
+
   return (
-    <div className="w-screen h-screen bg-gray-700">
+    <div className="w-full h-full bg-gray-700">
       <Navbar />
       <div className="pt-12 w-full h-full flex items-center justify-center">
-        <Hero />
+        <Projects />
       </div>
     </div>
   );
