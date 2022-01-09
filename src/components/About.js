@@ -18,6 +18,17 @@ const About = () => {
                 </div>
                 <img src={'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80'} alt="" className='object-cover' />
             </div>
+            <div className=" flex flex-col md:hidden">
+                <div className="text-slate-600 text-center">
+                    <p className="font-extrabold text-4xl">Welcome, my name is <span className='text-indigo-500'>Barnabas</span></p>
+                    <p className="mt-2 font-semibold text-sm">I am a React front-end developer, eager to learn.</p>
+                    <button className="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white text-sm lg:text-base py-1.5 px-6 rounded-lg font-semibold">My Resume</button>
+                </div>
+                <div className="mt-4 flex items-center justify-center text-slate-600 text-xl space-x-3">
+                    <AiFillGithub onClick={() => window.open('https://github.com/vabarnabas', '_blank')} className='hover:text-indigo-500 cursor-pointer'/>
+                    <FaLinkedinIn onClick={() => window.open('https://www.linkedin.com/in/vabarnabas/', '_blank')} className='hover:text-indigo-500 cursor-pointer text-base'/>
+                </div>
+            </div>
         </div>
     )
 }
