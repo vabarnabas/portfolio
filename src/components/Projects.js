@@ -31,12 +31,12 @@ const Projects = () => {
     ]
 
     return (
-        <div className='w-full h-full flex flex-col items-center justify-center px-6 py-8 select-none'>
+        <div className='w-full flex flex-col items-center justify-center px-6 py-8 select-none'>
             <p className="mr-auto text-white font-bold text-3xl mb-4"><span className='text-teal-500'>{'<'}</span>projects<span className='text-teal-500'>{'/>'}</span></p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 overflow">
                 {projects.map((item) => (
                     <div key={item.name} className="bg-slate-800 rounded-lg pb-6 overflow-hidden text-white h-max">
-                        <img src={item.image} alt="" className="aspect-video object-cover" />
+                        <img src={item.image} alt="" className="object-cover aspect-[2/1]" />
                         <p className="flex mx-4 mt-3 font-bold text-2xl">{item.name}</p>
                         <p className="mt-2 text-xs flex mx-4">{item.description}</p>
                         <div className="mt-4 mx-4 flex items-center justify-start space-x-2">
