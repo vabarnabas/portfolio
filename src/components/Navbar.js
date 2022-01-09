@@ -5,15 +5,19 @@ const Navbar = () => {
 
     const menuItems = [
         {
-            title: 'about',
+            title: 'Home',
             path: '',
         },
         {
-            title: 'projects',
+            title: 'Projects',
             path: '',
         },
         {
-            title: 'contact',
+            title: 'Skills',
+            path: '',
+        },
+        {
+            title: 'Contact',
             path: '',
         },
     ]
