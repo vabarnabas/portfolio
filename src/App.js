@@ -1,16 +1,18 @@
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 
 function App() {
 
   document.title = 'Barnabas Varga - Porfolio'
 
   return (
-    <div className="w-full h-full bg-gray-700">
+    <div className="w-full h-full bg-slate-50 scrollbar-hide">
       <Navbar />
-      <div className="pt-12 w-full h-full flex items-center justify-center">
+      <div className="pt-12 w-full h-full">
         <Projects />
+        <Skills />
       </div>
     </div>
   );
