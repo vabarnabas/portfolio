@@ -40,7 +40,10 @@ const Projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8">
                 {projects.map((item) => (
                     <div key={item.name} className="bg-slate-100 ring-1 ring-slate-300 rounded-lg overflow-hidden text-slate-600 pb-4 h-max">
-                        <img src={item.image} alt="" className="object-cover aspect-[2/1]" />
+                        <div className="relative">
+                            <div className="absolute inset-0 bg-indigo-500 bg-opacity-[0.65]"></div>
+                            <img src={item.image} alt="" className="object-cover aspect-[2/1]" />
+                        </div>
                         <div className="flex items-center justify-start mx-4 mt-4 space-x-2">
                             <p className="flex font-bold text-2xl">{item.name}</p>
                         </div>
