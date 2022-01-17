@@ -8,28 +8,28 @@ const Skills = () => {
     const skills = [
         {
             name: 'Software/Framework',
-            icon: <IoLogoJavascript className='text-indigo-500 text-lg'/>,
+            icon: <IoLogoJavascript className='text-indigo-500 text-3xl'/>,
             skills: [
                 'Adobe Photoshop', 'React.js', 'TailwindCSS', 'Firebase', 'GitHub'
             ],
         },
         {
             name: 'Soft Skills',
-            icon: <HiAnnotation className='text-indigo-500 text-lg'/>,
+            icon: <HiAnnotation className='text-indigo-500 text-3xl'/>,
             skills: [
                 'Team Player', 'Communication', 'Problem Solving', 'Adaptability', 'Creativity'
             ],
         },
         {
             name: 'Hard Skill',
-            icon: <RiComputerFill className='text-indigo-500 text-lg'/>,
+            icon: <RiComputerFill className='text-indigo-500 text-3xl'/>,
             skills: [
                 'Graphic Design', 'UI/UX Design', 'Data Management', 'Content Management', 'Front-end Development'
             ],
         },
         {
             name: 'To Learn',
-            icon: <HiAcademicCap className='text-indigo-500 text-xl'/>,
+            icon: <HiAcademicCap className='text-indigo-500 text-3xl'/>,
             skills: [
                 'Typescript', 'Next.js', 'React Native', 'Redux', 'PostgreSQL'
             ],
@@ -42,7 +42,7 @@ const Skills = () => {
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {skills.map((item) => (
                     <div key={item.name} className="w-full bg-slate-100 ring-1 flex flex-col items-center justify-center ring-slate-300 rounded-lg overflow-hidden text-slate-600 py-4 px-4 h-max">
-                        <div className="aspect-square bg-indigo-200 p-3 rounded-full mb-4">
+                        <div className="aspect-square flex items-center justify-center p-3 rounded-full mb-2">
                             {item.icon}
                         </div>
                         <p className="font-bold text-xl mb-2">{item.name}</p>
