@@ -23,7 +23,7 @@ const Navbar = () => {
     ]
 
     return (
-        <div className='z-10 fixed top-0 left-0 right-0 px-6 h-12 w-full flex items-center justify-center bg-slate-50 text-slate-600 select-none border-b border-slate-200'>
+        <div className='z-10 fixed top-0 left-0 right-0 px-6 h-12 w-full flex items-center justify-center bg-slate-50 text-slate-600 border-b border-slate-200'>
             <p className="mr-auto cursor-pointer font-bold flex items-center justify-center"><span className='text-indigo-500'>{'<'}</span>barnabee<span className='text-indigo-500'>{'/>'}</span></p>
             <div className="hidden md:flex ml-auto items-center justify-center space-x-8">
                 {menuItems.map((item) => (

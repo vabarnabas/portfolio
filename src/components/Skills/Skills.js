@@ -37,7 +37,7 @@ const Skills = () => {
     ]
 
     return (
-        <div className='w-full min-h-full flex flex-col items-center justify-center px-6 py-8 select-none'>
+        <div className='w-full min-h-full flex flex-col items-center justify-center px-6 py-8'>
             <p className="mr-auto text-slate-600 text-3xl font-bold mb-4">Skills</p>
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {skills.map((item) => (

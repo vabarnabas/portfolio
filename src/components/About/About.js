@@ -4,7 +4,7 @@ import { FaLinkedinIn } from 'react-icons/fa'
 
 const About = () => {
     return (
-        <div className='w-full min-h-full flex flex-col items-center justify-center px-6 py-8 sm:mt-4 md:mt-0 select-none'>
+        <div className='w-full min-h-full flex flex-col items-center justify-center px-6 py-8 sm:mt-4 md:mt-0'>
             <div className="aspect-[5/2] lg:aspect-[3/1] relative w-full rounded-lg overflow-hidden hidden md:flex items-center justify-center">
                 <div className="absolute inset-0 h-full w-full bg-indigo-500 bg-opacity-[0.85]"></div>
                 <div className="px-6 max-w-xl absolute text-white text-center">
