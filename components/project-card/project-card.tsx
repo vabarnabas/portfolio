@@ -29,7 +29,7 @@ export default function ProjectCard({
       <div className="h-full flex flex-col">
         <p className="text-3xl font-semibold">{title}</p>
         <p className="mt-4">{description}</p>
-        <div className="flex gap-x-3 mt-4 text-3xl items-center">
+        <div className="flex gap-x-2.5 mt-4 text-3xl items-center">
           {technologies.map((tech, index) => (
             <div
               className="cursor-pointer hover:text-text-primary ease-out transition-all duration-200 hover:opacity-100 opacity-80"

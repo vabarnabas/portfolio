@@ -70,7 +70,7 @@ export default function ExperienceSection() {
   return (
     <div className="">
       <p className="text-3xl font-semibold">Experience</p>
-      <div className="grid md:grid-cols-2 gap-8 mt-8">
+      <div className="grid md:grid-cols-2 gap-12 md:gap-8 mt-8">
         {experiences.map((experience, index) => (
           <div
             key={`menu_item_${experience.title
@@ -79,9 +79,9 @@ export default function ExperienceSection() {
             className=""
           >
             <p className="text-2xl font-semibold">{experience.title}</p>
-            <p className="opacity-80">{`${experience.company} (${experience.date})`}</p>
+            <p className="opacity-80 mt-1">{`${experience.company} (${experience.date})`}</p>
             {experience.bulletPoints && (
-              <ul className="list-disc list-inside mt-2">
+              <ul className="list-disc list-inside mt-3">
                 {experience.bulletPoints.map((bullet, index) => (
                   <li key={`bullet_${index}`}>{bullet}</li>
                 ))}

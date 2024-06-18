@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import {
-  Inter,
-  Montserrat,
-  Open_Sans,
-  Poppins,
-  Roboto,
-} from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import clsx from "clsx";
+import Footer from "@/components/footer/footer";
 
 const font = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -37,6 +32,7 @@ export default function RootLayout({
         <div className="w-full max-w-[1280px] px-6 pb-16 pt-20 md:px-8">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );

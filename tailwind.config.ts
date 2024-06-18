@@ -11,9 +11,11 @@ const config: Config = {
       colors: {
         background: {
           primary: "#0D090A",
+          secondary: "#221D1F",
         },
         text: {
           primary: "#FB3792",
+          secondary: "#FB3792",
         },
       },
     },
