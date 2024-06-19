@@ -1,13 +1,16 @@
 import ProjectCard from "@/components/project-card/project-card";
 import React from "react";
+import { AiFillOpenAI } from "react-icons/ai";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { FaYarn } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiBun, SiClerk, SiHono } from "react-icons/si";
 
 export default function ProjectsSection() {
   return (
-    <div>
+    <div id="projects" className="scroll-mt-20">
       <p className="text-3xl font-semibold">Projects</p>
-      <div className="mt-8">
+      <div className="mt-8 flex flex-col gap-y-8">
         <ProjectCard
           title="Booker"
           description="Booker is a passion project of mine, a small tool that helps small businesses to set up a schedule, making it really easy for their customers to book appointments during the open times."
@@ -17,10 +20,27 @@ export default function ProjectsSection() {
             <SiClerk className="text-2xl" key="booker_clerk" />,
             <SiHono className="text-2xl" key="booker_hono" />,
             <SiBun className="text-2xl" key="booker_bun" />,
+            <BiLogoPostgresql key="booker_postgresql" />,
           ]}
           github="a"
           live="a"
           src="/booker.png"
+        />
+        <ProjectCard
+          title="F1 Foresight"
+          description="Since early 2023 I am in love with Formula 1, and always wanted to do a project which is related to it. F1 Foresight came up as a project where me and my friends can predict the outcomes of certain races. Also it uses Generative AI to analyze your predictions which could be a great way to overview your theories."
+          src="/f1-foresight.png"
+          technologies={[
+            <RiNextjsFill key="f1_next" />,
+            <RiTailwindCssFill key="f1_tailwind" />,
+            <SiClerk className="text-2xl" key="f1_clerk" />,
+            <SiHono className="text-2xl" key="f1_hono" />,
+            <FaYarn key="f1_yarn" className="text-2xl" />,
+            <AiFillOpenAI key="f1_openai" />,
+            <BiLogoPostgresql key="f1_postgresql" />,
+          ]}
+          live="https://f1-foresight.vercel.app/"
+          github="https://github.com/vabarnabas/f1-foresight/"
         />
       </div>
     </div>

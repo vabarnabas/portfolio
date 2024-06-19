@@ -68,7 +68,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <div className="">
+    <div id="experience" className="scroll-mt-20">
       <p className="text-3xl font-semibold">Experience</p>
       <div className="grid md:grid-cols-2 gap-12 md:gap-8 mt-8">
         {experiences.map((experience, index) => (
@@ -78,7 +78,7 @@ export default function ExperienceSection() {
               .replaceAll(" ", "_")}_${index}`}
             className=""
           >
-            <p className="text-2xl font-semibold">{experience.title}</p>
+            <p className="text-3xl font-semibold">{experience.title}</p>
             <p className="opacity-80 mt-1">{`${experience.company} (${experience.date})`}</p>
             {experience.bulletPoints && (
               <ul className="list-disc list-inside mt-3">

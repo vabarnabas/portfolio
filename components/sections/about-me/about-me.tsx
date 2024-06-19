@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMeSection() {
   return (
-    <div className="">
+    <div id="about-me" className="scroll-mt-20">
       <p className="text-3xl font-semibold">About Me</p>
       <p className="mt-8 text-lg">
         {`My name is Barnabas Varga I am a Full-Stack Engineer based in Hungary

@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          "flex flex-col items-center bg-background-primary text-white",
+          "flex flex-col items-center bg-background-primary text-white scroll-smooth",
           font.className
         )}
       >
