@@ -10,7 +10,7 @@ export default function ProjectsSection() {
   return (
     <div id="projects" className="scroll-mt-20">
       <p className="text-3xl font-semibold">Projects</p>
-      <div className="mt-8 flex flex-col gap-y-8">
+      <div className="mt-8 flex flex-col gap-y-12 md:gap-y-8">
         <ProjectCard
           title="Booker"
           description="Booker is a passion project of mine, a small tool that helps small businesses to set up a schedule, making it really easy for their customers to book appointments during the open times."

@@ -7,9 +7,9 @@ export default function Footer() {
     "cursor-pointer hover:text-text-primary ease-out transition-all duration-200";
 
   return (
-    <div className="h-16 w-full flex justify-center border-t border-background-secondary">
+    <div className="h-16 w-full flex justify-center border-background-secondary">
       <div className="flex items-center justify-between w-full max-w-[1280px] px-6 md:px-8">
-        <p className="text-sm font-medium">
+        <p className="text-sm">
           Created by <span className="text-text-primary">Barnabas Varga</span>
         </p>
         <div className="flex items-center gap-x-3 text-xl">
