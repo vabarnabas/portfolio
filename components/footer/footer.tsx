@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import LogoText from "../logo/logo-text";
 
 export default function Footer() {
   const className =
@@ -9,8 +10,14 @@ export default function Footer() {
   return (
     <div className="h-16 w-full flex justify-center border-background-secondary">
       <div className="flex items-center justify-between w-full max-w-[1280px] px-6 md:px-8">
-        <p className="text-sm">
-          Created by <span className="text-text-primary">Barnabas Varga</span>
+        <p className="text-sm flex items-center">
+          <LogoText
+            width={18}
+            height={18}
+            className="text-text-primary mr-1.5"
+          />
+          Created by
+          <span className="ml-1 font-medium">Barnabas Varga</span>
         </p>
         <div className="flex items-center gap-x-3 text-xl">
           <Link target="_blank" href={"https://github.com/vabarnabas"}>

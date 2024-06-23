@@ -12,21 +12,6 @@ export default function ProjectsSection() {
       <p className="text-3xl font-semibold">Projects</p>
       <div className="mt-8 flex flex-col gap-y-12 md:gap-y-8">
         <ProjectCard
-          title="Booker"
-          description="Booker is a passion project of mine, a small tool that helps small businesses to set up a schedule, making it really easy for their customers to book appointments during the open times."
-          technologies={[
-            <RiNextjsFill key="booker_next" />,
-            <RiTailwindCssFill key="booker_tailwind" />,
-            <SiClerk className="text-2xl" key="booker_clerk" />,
-            <SiHono className="text-2xl" key="booker_hono" />,
-            <SiBun className="text-2xl" key="booker_bun" />,
-            <BiLogoPostgresql key="booker_postgresql" />,
-          ]}
-          github="a"
-          live="a"
-          src="/booker.png"
-        />
-        <ProjectCard
           title="F1 Foresight"
           description="Since early 2023 I am in love with Formula 1, and always wanted to do a project which is related to it. F1 Foresight came up as a project where me and my friends can predict the outcomes of certain races. Also it uses Generative AI to analyze your predictions which could be a great way to overview your theories."
           src="/f1-foresight.png"
@@ -41,6 +26,31 @@ export default function ProjectsSection() {
           ]}
           live="https://f1-foresight.vercel.app/"
           github="https://github.com/vabarnabas/f1-foresight/"
+        />
+        <ProjectCard
+          title="Wolt Picker"
+          description="I've had the idea of this project in early 2023, when I stumbled across a Wolt repository containing the restaurant API. Since me and my friends always had a problem figuring out where to eat, it was an obvious choice how to use the API. This repository is a revised version of the site, since the original had some small issues."
+          src="/wolt-picker.png"
+          technologies={[
+            <RiNextjsFill key="wolt_next" />,
+            <RiTailwindCssFill key="wolt_tailwind" />,
+            <FaYarn key="wolt_yarn" className="text-2xl" />,
+          ]}
+          live="https://wolt-picker.vercel.app/"
+          github="https://github.com/vabarnabas/wolt-picker"
+        />
+        <ProjectCard
+          title="Booker"
+          description="Booker is a passion project of mine, a small tool that helps small businesses to set up a schedule, making it really easy for their customers to book appointments during the open times."
+          technologies={[
+            <RiNextjsFill key="booker_next" />,
+            <RiTailwindCssFill key="booker_tailwind" />,
+            <SiClerk className="text-2xl" key="booker_clerk" />,
+            <SiHono className="text-2xl" key="booker_hono" />,
+            <SiBun className="text-2xl" key="booker_bun" />,
+            <BiLogoPostgresql key="booker_postgresql" />,
+          ]}
+          src="/booker.png"
         />
       </div>
     </div>

@@ -41,17 +41,17 @@ export default function ProjectCard({
           ))}
         </div>
         <div className="lg:mt-auto flex gap-x-4 mt-8 empty:mt-0">
-          {github ? (
-            <Link className="flex w-full" href={github} target="_blank">
-              <button className="flex items-center justify-center w-full gap-x-1.5 rounded-md px-4 py-2 bg-text-primary hover:bg-text-secondary text-white font-medium">
-                <FaGithub /> Github
-              </button>
-            </Link>
-          ) : null}
           {live ? (
             <Link className="flex w-full" href={live} target="_blank">
               <button className="flex items-center justify-center w-full gap-x-1.5 rounded-md px-4 py-2 bg-text-primary hover:bg-text-secondary text-white font-medium">
                 Live Demo
+              </button>
+            </Link>
+          ) : null}
+          {github ? (
+            <Link className="flex w-full" href={github} target="_blank">
+              <button className="flex items-center justify-center w-full gap-x-1.5 rounded-md px-4 py-2 bg-text-primary hover:bg-text-secondary text-white font-medium">
+                <FaGithub /> Github
               </button>
             </Link>
           ) : null}
