@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 
 interface Props {
-  width: number;
-  height: number;
-  className?: string;
+  width: number
+  height: number
+  className?: string
 }
 
 export default function Logo({ width, height, className }: Props) {
@@ -22,5 +22,5 @@ export default function Logo({ width, height, className }: Props) {
         fill="white"
       />
     </svg>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import React from "react";
-import { AiFillOpenAI } from "react-icons/ai";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { FaDocker, FaReact } from "react-icons/fa";
-import { GrGraphQl } from "react-icons/gr";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiMicrosoftazure, SiNestjs } from "react-icons/si";
+import React from "react"
+import { AiFillOpenAI } from "react-icons/ai"
+import { BiLogoPostgresql } from "react-icons/bi"
+import { FaDocker, FaReact } from "react-icons/fa"
+import { GrGraphQl } from "react-icons/gr"
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
+import { SiExpress, SiMicrosoftazure, SiNestjs } from "react-icons/si"
 
 export default function ExperienceSection() {
   const experiences = [
@@ -27,7 +27,7 @@ export default function ExperienceSection() {
         <SiMicrosoftazure className="text-xl" key={"azure-2"} />,
         <AiFillOpenAI key={"openai-2"} />,
         <FaDocker key={"docker-2"} />,
-        <p className="text-base select-none" key={"rest-2"}>
+        <p className="select-none text-base" key={"rest-2"}>
           REST
         </p>,
       ],
@@ -47,7 +47,7 @@ export default function ExperienceSection() {
         <SiNestjs key={"nestjs-1"} />,
         <BiLogoPostgresql key={"postgresql-1"} />,
         <GrGraphQl className="text-xl" key={"graphql-1"} />,
-        <p className="text-lg select-none" key={"rest-1"}>
+        <p className="select-none text-lg" key={"rest-1"}>
           REST
         </p>,
       ],
@@ -65,12 +65,12 @@ export default function ExperienceSection() {
         <RiTailwindCssFill key={"tailwind-1"} />,
       ],
     },
-  ];
+  ]
 
   return (
     <div id="experience" className="scroll-mt-20">
       <p className="text-3xl font-semibold">Experience</p>
-      <div className="grid md:grid-cols-2 gap-12 md:gap-8 mt-8">
+      <div className="mt-8 grid gap-12 md:grid-cols-2 md:gap-8">
         {experiences.map((experience, index) => (
           <div
             key={`menu_item_${experience.title
@@ -79,19 +79,19 @@ export default function ExperienceSection() {
             className=""
           >
             <p className="text-3xl font-semibold">{experience.title}</p>
-            <p className="opacity-80 mt-1">{`${experience.company} (${experience.date})`}</p>
+            <p className="mt-1 opacity-80">{`${experience.company} (${experience.date})`}</p>
             {experience.bulletPoints && (
-              <ul className="list-disc list-inside mt-3">
+              <ul className="mt-3 list-inside list-disc">
                 {experience.bulletPoints.map((bullet, index) => (
                   <li key={`bullet_${index}`}>{bullet}</li>
                 ))}
               </ul>
             )}
             {experience.technologies && (
-              <div className="flex gap-x-2.5 mt-3 text-2xl items-center">
+              <div className="mt-3 flex items-center gap-x-2.5 text-2xl">
                 {experience.technologies.map((tech, index) => (
                   <div
-                    className="cursor-pointer hover:text-text-primary ease-out transition-all duration-200 hover:opacity-100 opacity-80"
+                    className="cursor-pointer opacity-80 transition-all duration-200 ease-out hover:text-text-primary hover:opacity-100"
                     key={`tech_${index}`}
                   >
                     {tech}
@@ -103,5 +103,5 @@ export default function ExperienceSection() {
         ))}
       </div>
     </div>
-  );
+  )
 }

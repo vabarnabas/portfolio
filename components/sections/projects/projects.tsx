@@ -1,10 +1,11 @@
-import ProjectCard from "@/components/project-card/project-card";
-import React from "react";
-import { AiFillOpenAI } from "react-icons/ai";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { FaYarn } from "react-icons/fa";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiBun, SiClerk, SiHono } from "react-icons/si";
+import React from "react"
+import { AiFillOpenAI } from "react-icons/ai"
+import { BiLogoPostgresql } from "react-icons/bi"
+import { FaYarn } from "react-icons/fa"
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
+import { SiBun, SiClerk, SiHono } from "react-icons/si"
+
+import ProjectCard from "@/components/project-card/project-card"
 
 export default function ProjectsSection() {
   return (
@@ -54,5 +55,5 @@ export default function ProjectsSection() {
         />
       </div>
     </div>
-  );
+  )
 }

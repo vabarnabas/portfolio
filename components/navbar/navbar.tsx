@@ -1,6 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import Logo from "../logo/logo";
+import Link from "next/link"
+import React from "react"
+
+import Logo from "../logo/logo"
 
 export default function Navbar() {
   const menuItems = [
@@ -20,20 +21,20 @@ export default function Navbar() {
       name: "Contact",
       link: "#",
     },
-  ];
+  ]
 
   return (
-    <div className="fixed inset-x-0 bg-background-primary/70 backdrop-blur-md flex items-center justify-center h-16 z-50">
-      <div className="w-full max-w-[1280px] flex items-center justify-between md:px-8 px-6">
+    <div className="fixed inset-x-0 z-50 flex h-16 items-center justify-center bg-background-primary/70 backdrop-blur-md">
+      <div className="flex w-full max-w-[1280px] items-center justify-between px-6 md:px-8">
         <Link href={"/"}>
-          <button className="w-max flex font-medium text-lg items-center gap-x-2">
+          <button className="flex w-max items-center gap-x-2 text-lg font-medium">
             <Logo className="text-text-primary" width={26} height={26} />
             <p className="">
               vabarnabas<span className="text-text-primary">.com</span>
             </p>
           </button>
         </Link>
-        <div className="flex gap-x-8 w-max">
+        <div className="flex w-max gap-x-8">
           {menuItems.map((item, index) => (
             <Link
               key={`menu_item_${item.name
@@ -41,7 +42,7 @@ export default function Navbar() {
                 .replaceAll(" ", "_")}_${index}`}
               href={item.link}
             >
-              <div className="cursor-pointer hover:text-text-primary transition-colors duration-200">
+              <div className="cursor-pointer transition-colors duration-200 hover:text-text-primary">
                 {item.name}
               </div>
             </Link>
@@ -49,5 +50,5 @@ export default function Navbar() {
         </div>
       </div>
     </div>
-  );
+  )
 }

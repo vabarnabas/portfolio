@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function AboutMeSection() {
   return (
@@ -11,5 +11,5 @@ export default function AboutMeSection() {
         to present something that is functional an aesthetically pleasing. I've started my web development journey in 2021 as a Frontend Developer, but since that I've transitioned into a more Full-Stack Developer with a I can help wherever I can approach.`}
       </p>
     </div>
-  );
+  )
 }

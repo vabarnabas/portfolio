@@ -1,24 +1,26 @@
-import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/navbar/navbar";
-import clsx from "clsx";
-import Footer from "@/components/footer/footer";
+import "./globals.css"
+
+import clsx from "clsx"
+import type { Metadata } from "next"
+import { Roboto } from "next/font/google"
+
+import Footer from "@/components/footer/footer"
+import Navbar from "@/components/navbar/navbar"
 
 const font = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
-});
+})
 
 export const metadata: Metadata = {
   title: "Portfolio - Barnabas Varga",
   description: "Personal Portfolio of Barnabas Varga",
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -27,7 +29,7 @@ export default function RootLayout({
       </head>
       <body
         className={clsx(
-          "flex flex-col items-center bg-background-primary text-white scroll-smooth",
+          "flex flex-col items-center scroll-smooth bg-background-primary text-white",
           font.className
         )}
       >
@@ -38,5 +40,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  );
+  )
 }
