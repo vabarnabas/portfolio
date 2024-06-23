@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -15,11 +15,11 @@ const config: Config = {
         },
         text: {
           primary: "#FB3792",
-          secondary: "#de237a",
+          secondary: "#0C0306",
         },
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config

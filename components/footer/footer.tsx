@@ -9,7 +9,7 @@ export default function Footer() {
     "cursor-pointer hover:text-text-primary ease-out transition-all duration-200"
 
   return (
-    <div className="flex h-16 w-full justify-center border-background-secondary">
+    <div className="flex h-16 w-full justify-center">
       <div className="flex w-full max-w-[1280px] items-center justify-between px-6 md:px-8">
         <p className="flex items-center text-sm">
           <LogoText
