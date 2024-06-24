@@ -15,7 +15,7 @@ const config: Config = {
         },
         text: {
           primary: "#FB3792",
-          secondary: "#0C0306",
+          secondary: "#de237a",
         },
       },
     },
