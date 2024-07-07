@@ -2,8 +2,9 @@ import React from "react"
 import { AiFillOpenAI } from "react-icons/ai"
 import { BiLogoPostgresql } from "react-icons/bi"
 import { FaYarn } from "react-icons/fa"
+import { GrMysql } from "react-icons/gr"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
-import { SiBun, SiClerk, SiHono } from "react-icons/si"
+import { SiBun, SiClerk, SiHono, SiMicrosoftsqlserver } from "react-icons/si"
 
 import ProjectCard from "@/components/project-card/project-card"
 
@@ -15,7 +16,7 @@ export default function ProjectsSection() {
         <ProjectCard
           title="F1 Foresight"
           description="Since early 2023 I am in love with Formula 1, and always wanted to do a project which is related to it. F1 Foresight came up as a project where me and my friends can predict the outcomes of certain races. Also it uses Generative AI to analyze your predictions which could be a great way to overview your theories."
-          src="/f1-foresight.png"
+          src="/f1-foresight.jpeg"
           technologies={[
             <RiNextjsFill key="f1_next" />,
             <RiTailwindCssFill key="f1_tailwind" />,
@@ -29,9 +30,24 @@ export default function ProjectsSection() {
           github="https://github.com/vabarnabas/f1-foresight/"
         />
         <ProjectCard
+          title="Overseer"
+          description=""
+          src="/overseer.jpeg"
+          technologies={[
+            <RiNextjsFill key="overseer_next" />,
+            <RiTailwindCssFill key="overseer_tailwind" />,
+            <SiClerk className="text-2xl" key="overseer_clerk" />,
+            <SiHono className="text-2xl" key="overseer_hono" />,
+            <FaYarn key="overseer_yarn" className="text-2xl" />,
+            <BiLogoPostgresql key="overseer_postgresql" />,
+            <GrMysql key="overseer_mysql" />,
+            <SiMicrosoftsqlserver key="overseer_mssql" />,
+          ]}
+        />
+        <ProjectCard
           title="Wolt Picker"
           description="I've had the idea of this project in early 2023, when I stumbled across a Wolt repository containing the restaurant API. Since me and my friends always had a problem figuring out where to eat, it was an obvious choice how to use the API. This repository is a revised version of the site, since the original had some small issues."
-          src="/wolt-picker.png"
+          src="/wolt-picker.jpeg"
           technologies={[
             <RiNextjsFill key="wolt_next" />,
             <RiTailwindCssFill key="wolt_tailwind" />,
@@ -43,6 +59,7 @@ export default function ProjectsSection() {
         <ProjectCard
           title="Booker"
           description="Booker is a passion project of mine, a small tool that helps small businesses to set up a schedule, making it really easy for their customers to book appointments during the open times."
+          src="/booker.jpeg"
           technologies={[
             <RiNextjsFill key="booker_next" />,
             <RiTailwindCssFill key="booker_tailwind" />,
@@ -51,7 +68,6 @@ export default function ProjectsSection() {
             <SiBun className="text-2xl" key="booker_bun" />,
             <BiLogoPostgresql key="booker_postgresql" />,
           ]}
-          src="/booker.png"
         />
       </div>
     </div>
