@@ -23,7 +23,7 @@ export default function ProjectCard({
   return (
     <div className="grid gap-8 lg:grid-cols-2">
       <div className="">
-        <div className="relative h-56 overflow-clip rounded-lg md:h-[20rem]">
+        <div className="relative h-52 overflow-clip rounded-lg px-2 md:h-[20rem]">
           <Image priority src={src} fill objectFit="cover" alt={src} />
         </div>
       </div>

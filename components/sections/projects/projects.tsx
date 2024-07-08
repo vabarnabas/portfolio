@@ -16,7 +16,7 @@ export default function ProjectsSection() {
         <ProjectCard
           title="F1 Foresight"
           description="Since early 2023 I am in love with Formula 1, and always wanted to do a project which is related to it. F1 Foresight came up as a project where me and my friends can predict the outcomes of certain races. Also it uses Generative AI to analyze your predictions which could be a great way to overview your theories."
-          src="/f1-foresight.jpeg"
+          src="/f1-foresight.png"
           technologies={[
             <RiNextjsFill key="f1_next" />,
             <RiTailwindCssFill key="f1_tailwind" />,
@@ -31,8 +31,8 @@ export default function ProjectsSection() {
         />
         <ProjectCard
           title="Overseer"
-          description=""
-          src="/overseer.jpeg"
+          description="Overseer is a Database Viewer tool, which currently supports PostgresSQL, MySQL and Microsoft SQL Server from many providers. My aim is to develop this and add more features as needed, but I feel that this is already a great achievement since I wanted to something like this for years."
+          src="/overseer.png"
           technologies={[
             <RiNextjsFill key="overseer_next" />,
             <RiTailwindCssFill key="overseer_tailwind" />,
@@ -40,14 +40,16 @@ export default function ProjectsSection() {
             <SiHono className="text-2xl" key="overseer_hono" />,
             <FaYarn key="overseer_yarn" className="text-2xl" />,
             <BiLogoPostgresql key="overseer_postgresql" />,
-            <GrMysql key="overseer_mysql" />,
-            <SiMicrosoftsqlserver key="overseer_mssql" />,
+            <GrMysql key="overseer_mysql" className="text-2xl" />,
+            <SiMicrosoftsqlserver key="overseer_mssql" className="text-2xl" />,
           ]}
+          live="https://overseer.vercel.app/"
+          github="https://github.com/vabarnabas/overseer"
         />
         <ProjectCard
           title="Wolt Picker"
           description="I've had the idea of this project in early 2023, when I stumbled across a Wolt repository containing the restaurant API. Since me and my friends always had a problem figuring out where to eat, it was an obvious choice how to use the API. This repository is a revised version of the site, since the original had some small issues."
-          src="/wolt-picker.jpeg"
+          src="/wolt-picker.png"
           technologies={[
             <RiNextjsFill key="wolt_next" />,
             <RiTailwindCssFill key="wolt_tailwind" />,
@@ -59,7 +61,7 @@ export default function ProjectsSection() {
         <ProjectCard
           title="Booker"
           description="Booker is a passion project of mine, a small tool that helps small businesses to set up a schedule, making it really easy for their customers to book appointments during the open times."
-          src="/booker.jpeg"
+          src="/booker.png"
           technologies={[
             <RiNextjsFill key="booker_next" />,
             <RiTailwindCssFill key="booker_tailwind" />,
