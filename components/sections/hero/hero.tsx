@@ -13,7 +13,7 @@ export default function HeroSection() {
         <p className="mt-3 text-lg opacity-80">
           with 3+ years of experience, and a passion to learn
         </p>
-        <button className="mt-6 w-max rounded-md bg-text-primary px-4 py-1.5 font-medium text-white hover:bg-text-secondary md:mt-8">
+        <button className="mt-6 w-max rounded-md bg-text-primary px-4 py-2 font-medium text-white hover:bg-text-secondary md:mt-8">
           Learn About Me
         </button>
       </div>

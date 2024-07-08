@@ -12,7 +12,7 @@ export default function ProjectsSection() {
   return (
     <div id="projects" className="scroll-mt-20">
       <p className="text-3xl font-semibold">Projects</p>
-      <div className="mt-8 flex flex-col gap-y-12 md:gap-y-8">
+      <div className="mt-8 grid gap-12 md:grid-cols-2 md:gap-8">
         <ProjectCard
           title="F1 Foresight"
           description="Since early 2023 I am in love with Formula 1, and always wanted to do a project which is related to it. F1 Foresight came up as a project where me and my friends can predict the outcomes of certain races. Also it uses Generative AI to analyze your predictions which could be a great way to overview your theories."

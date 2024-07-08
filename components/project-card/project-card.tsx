@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { FaGithub } from "react-icons/fa"
@@ -13,7 +12,6 @@ interface Props {
 }
 
 export default function ProjectCard({
-  src,
   title,
   description,
   technologies,
@@ -21,12 +19,12 @@ export default function ProjectCard({
   live,
 }: Props) {
   return (
-    <div className="grid gap-8 lg:grid-cols-2">
-      <div className="">
+    <div className="grid gap-8 lg:grid-cols-1">
+      {/* <div className="">
         <div className="relative h-52 overflow-clip rounded-lg px-2 md:h-[20rem]">
           <Image priority src={src} fill objectFit="cover" alt={src} />
         </div>
-      </div>
+      </div> */}
       <div className="flex h-full flex-col">
         <p className="text-3xl font-semibold">{title}</p>
         <p className="mt-4">{description}</p>
@@ -40,7 +38,7 @@ export default function ProjectCard({
             </div>
           ))}
         </div>
-        <div className="mt-8 flex gap-x-4 empty:mt-0 lg:mt-auto">
+        <div className="mt-8 flex gap-x-4 empty:mt-0">
           {live ? (
             <Link className="flex w-full" href={live} target="_blank">
               <button className="flex w-full items-center justify-center gap-x-1.5 rounded-md bg-text-primary px-4 py-2 font-medium text-white hover:bg-text-secondary">
