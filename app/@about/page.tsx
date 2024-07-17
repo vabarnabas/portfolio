@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function AboutMeSection() {
+export default function AboutSection() {
   return (
     <div id="about-me" className="scroll-mt-20">
       <p className="text-3xl font-semibold">About Me</p>

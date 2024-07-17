@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <div className="fixed inset-x-0 z-20 flex h-16 items-center justify-center bg-background-primary/70 backdrop-blur-md">
       <div className="flex w-full max-w-[1280px] items-center justify-between px-6 md:px-8">
-        <Link href={"/"}>
+        <Link href={"#hero"}>
           <div className="flex w-max items-center gap-x-2 text-lg font-medium">
             <Logo className="text-text-primary" width={26} height={26} />
             <p className="">

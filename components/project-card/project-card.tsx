@@ -2,6 +2,8 @@ import Link from "next/link"
 import React from "react"
 import { FaGithub } from "react-icons/fa"
 
+import Button from "../ui/button"
+
 interface Props {
   src: string
   title: string
@@ -20,11 +22,6 @@ export default function ProjectCard({
 }: Props) {
   return (
     <div className="grid gap-8 lg:grid-cols-1">
-      {/* <div className="">
-        <div className="relative h-52 overflow-clip rounded-lg px-2 md:h-[20rem]">
-          <Image priority src={src} fill objectFit="cover" alt={src} />
-        </div>
-      </div> */}
       <div className="flex h-full flex-col">
         <p className="text-3xl font-semibold">{title}</p>
         <p className="mt-4">{description}</p>
@@ -41,16 +38,14 @@ export default function ProjectCard({
         <div className="mt-8 flex gap-x-4 empty:mt-0">
           {live ? (
             <Link className="flex w-full" href={live} target="_blank">
-              <button className="flex w-full items-center justify-center gap-x-1.5 rounded-md bg-text-primary px-4 py-2 font-medium text-white hover:bg-text-secondary">
-                Live Demo
-              </button>
+              <Button className="w-full">Live Demo</Button>
             </Link>
           ) : null}
           {github ? (
             <Link className="flex w-full" href={github} target="_blank">
-              <button className="flex w-full items-center justify-center gap-x-1.5 rounded-md bg-text-primary px-4 py-2 font-medium text-white hover:bg-text-secondary">
+              <Button className="w-full gap-x-1.5">
                 <FaGithub /> Github
-              </button>
+              </Button>
             </Link>
           ) : null}
         </div>

@@ -3,6 +3,7 @@ import "./globals.css"
 import clsx from "clsx"
 import type { Metadata } from "next"
 import { Roboto } from "next/font/google"
+import React from "react"
 
 import Footer from "@/components/footer/footer"
 import Navbar from "@/components/navbar/navbar"
@@ -18,9 +19,18 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
+  hero,
+  about,
+  technologies,
+  experience,
+  projects,
 }: Readonly<{
   children: React.ReactNode
+  hero: React.ReactNode
+  about: React.ReactNode
+  technologies: React.ReactNode
+  experience: React.ReactNode
+  projects: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -34,8 +44,12 @@ export default function RootLayout({
         )}
       >
         <Navbar />
-        <div className="w-full max-w-[1280px] px-6 pb-16 pt-20 md:px-8">
-          {children}
+        <div className="flex w-full max-w-[1280px] flex-col gap-y-16 px-6 pb-16 pt-20 md:px-8">
+          {hero}
+          {technologies}
+          {about}
+          {experience}
+          {projects}
         </div>
         <Footer />
       </body>
