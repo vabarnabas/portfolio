@@ -18,12 +18,10 @@ export default function HeroSection() {
         <p className="mt-3 text-lg opacity-80">
           with 3+ years of experience, and a passion to learn
         </p>
-        <Button className="mt-6 w-max md:mt-8">Learn About Me</Button>
+        <Button className="mt-6 w-max md:mt-6">Learn About Me</Button>
       </div>
-      <div className="">
-        <div className="relative h-56 overflow-clip rounded-lg md:h-[22rem]">
-          <Image priority src="/barni.jpg" fill objectFit="cover" alt="me" />
-        </div>
+      <div className="relative h-56 overflow-clip rounded-lg md:h-[22rem]">
+        <Image priority src="/barni.jpg" fill objectFit="cover" alt="me" />
       </div>
     </div>
   )
