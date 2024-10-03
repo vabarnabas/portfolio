@@ -1,4 +1,5 @@
 import clsx from "clsx"
+import { Computer } from "lucide-react"
 import React from "react"
 import Marquee from "react-fast-marquee"
 import { AiFillOpenAI } from "react-icons/ai"
@@ -14,9 +15,12 @@ export default function TechnologiesSection() {
 
   return (
     <div className="">
-      <p className="text-3xl font-semibold">Techonlogies I Use</p>
+      <p className="flex items-center gap-x-2 text-3xl font-semibold">
+        <Computer className="size-8 text-text-primary" />
+        Techonlogies I Use
+      </p>
       <Marquee autoFill className="mt-8 text-6xl">
-        <div className="flex w-full items-center justify-between gap-x-16 pr-16">
+        <div className="flex w-full items-center justify-between gap-x-12 pr-12">
           <SiExpress className={className} />
           <SiHono className={clsx("text-5xl", className)} />
           <SiNestjs className={clsx("text-5xl", className)} />
