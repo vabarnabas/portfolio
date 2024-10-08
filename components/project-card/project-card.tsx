@@ -2,7 +2,9 @@ import Link from "next/link"
 import React from "react"
 import { FaGithub } from "react-icons/fa"
 
-import Button from "../ui/button"
+import { cn } from "@/lib/utils"
+
+import { buttonVariants } from "../ui/button"
 
 interface Props {
   src: string
@@ -37,15 +39,21 @@ export default function ProjectCard({
         </div>
         <div className="mt-8 flex gap-x-4 empty:mt-0">
           {live ? (
-            <Link className="flex w-full" href={live} target="_blank">
-              <Button className="w-full">Live Demo</Button>
+            <Link
+              className={cn(buttonVariants({ variant: "default" }), "w-full")}
+              href={live}
+              target="_blank"
+            >
+              Live Demo
             </Link>
           ) : null}
           {github ? (
-            <Link className="flex w-full" href={github} target="_blank">
-              <Button className="w-full gap-x-1.5">
-                <FaGithub /> Github
-              </Button>
+            <Link
+              className={cn(buttonVariants({ variant: "default" }), "w-full")}
+              href={github}
+              target="_blank"
+            >
+              <FaGithub /> Github
             </Link>
           ) : null}
         </div>

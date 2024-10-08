@@ -4,6 +4,7 @@ import clsx from "clsx"
 import type { Metadata } from "next"
 import { Roboto } from "next/font/google"
 import React from "react"
+import { Toaster } from "sonner"
 
 import Footer from "@/components/footer/footer"
 import Navbar from "@/components/navbar/navbar"
@@ -24,6 +25,7 @@ export default function RootLayout({
   technologies,
   experience,
   projects,
+  contact,
 }: Readonly<{
   children: React.ReactNode
   hero: React.ReactNode
@@ -31,6 +33,7 @@ export default function RootLayout({
   technologies: React.ReactNode
   experience: React.ReactNode
   projects: React.ReactNode
+  contact: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -50,8 +53,19 @@ export default function RootLayout({
           {about}
           {experience}
           {projects}
+          {contact}
         </div>
         <Footer />
+        <Toaster
+          position="bottom-right"
+          toastOptions={{
+            classNames: {
+              toast: "bg-background-secondary",
+              content: "text-white",
+              default: "text-white",
+            },
+          }}
+        />
       </body>
     </html>
   )

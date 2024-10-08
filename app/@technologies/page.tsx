@@ -9,9 +9,11 @@ import { GrGraphQl } from "react-icons/gr"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
 import { SiExpress, SiHono, SiMicrosoftazure, SiNestjs } from "react-icons/si"
 
+import { cn } from "@/lib/utils"
+
 export default function TechnologiesSection() {
   const className =
-    "cursor-pointer hover:text-text-primary ease-out transition-all duration-200 hover:opacity-100 opacity-60"
+    "cursor-pointer group-hover:text-text-primary ease-out transition-all duration-200 group-hover:opacity-100 opacity-60"
 
   return (
     <div className="">
@@ -19,22 +21,64 @@ export default function TechnologiesSection() {
         <Computer className="size-8 text-text-primary" />
         Techonlogies I Use
       </p>
-      <Marquee autoFill className="mt-8 text-6xl">
+      <Marquee speed={65} autoFill className="mt-8 text-6xl">
         <div className="flex w-full items-center justify-between gap-x-12 pr-12">
-          <SiExpress className={className} />
-          <SiHono className={clsx("text-5xl", className)} />
-          <SiNestjs className={clsx("text-5xl", className)} />
-          <FaReact className={clsx("text-5xl", className)} />
-          <RiNextjsFill className={className} />
-          <RiTailwindCssFill className={className} />
-          <BiLogoPostgresql className={className} />
-          <BiLogoTypescript className={className} />
-          <p className={clsx("select-none text-4xl", className)}>REST</p>
-          <GrGraphQl className={clsx("text-5xl", className)} />
-          <AiFillOpenAI className={className} />
-          <SiMicrosoftazure className={clsx("text-5xl", className)} />
-          <FaAws className={className} />
-          <FaDocker className={className} />
+          <div className="group flex items-center gap-x-4">
+            <SiExpress className={cn(className, "text-5xl")} />
+            <p className={cn(className, "text-2xl")}>Express.js</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <SiHono className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>Hono</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <SiNestjs className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>NestJS</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <FaReact className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>React</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <RiNextjsFill className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>Next.js</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <RiTailwindCssFill className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>Tailwind CSS</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <BiLogoPostgresql className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>PostgreSQL</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <BiLogoTypescript className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>TypeScript</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <p className={clsx("select-none text-4xl", className)}>REST</p>
+            <p className={cn(className, "text-2xl")}>REST API</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <GrGraphQl className={clsx("text-4xl", className)} />
+            <p className={cn(className, "text-2xl")}>GraphQL</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <AiFillOpenAI className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>OpenAI</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <SiMicrosoftazure className={clsx("text-4xl", className)} />
+            <p className={cn(className, "text-2xl")}>Azure</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <FaAws className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>AWS</p>
+          </div>
+          <div className="group flex items-center gap-x-4">
+            <FaDocker className={clsx("text-5xl", className)} />
+            <p className={cn(className, "text-2xl")}>Docker</p>
+          </div>
         </div>
       </Marquee>
     </div>
