@@ -9,7 +9,7 @@ export async function submitContactForm(data: ContactFormData) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": process.env.NEXT_PUBLIC_CONTACTO_API_KEY!,
+        "x-api-key": process.env.CONTACTO_API_KEY!,
       },
       body: JSON.stringify({
         ...data,
