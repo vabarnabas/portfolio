@@ -13,7 +13,7 @@ export async function submitContactForm(data: ContactFormData) {
       },
       body: JSON.stringify({
         ...data,
-        applicationId: process.env.NEXT_PUBLIC_CONTACTO_APP_ID,
+        applicationId: process.env.CONTACTO_APP_ID,
       }),
     }
   )
